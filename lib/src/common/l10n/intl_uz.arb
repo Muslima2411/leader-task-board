@@ -1,0 +1,24 @@
+{
+  "@@locale": "uz",
+  "choose_lang": "Tilni tanlang",
+  "choose": "Tanlash",
+  "lost_internet_connection": "Internet yo’q. Internet bilan ulanishni tekshiring",
+  "date": "Sana",
+  "settings":"Sozlanmalar",
+  "choose_mode": "Rang tanlang",
+  "white": "Oq",
+  "black": "Qora",
+  "profile_title": "Profil",
+  "profile_language": "Til",
+  "profile_theme": "Fon",
+  "today": "Bugun",
+  "sentabr": "Sentabr 17",
+  "create_new_tasks": "Yangi topshiriq yaratish",
+  "new_tasks": "Topshiriq nomi",
+  "categories": "Kategoriya",
+  "start_time": "Boshlanadi" ,
+  "desc": "Qo'shimcha ma'lumot",
+  "create": "Yaratish",
+  "design": "Dezayn"
+
+}

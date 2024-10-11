@@ -1,0 +1,83 @@
+name: task_management_app
+description: "A new Flutter project."
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+
+  #state management
+  bloc: ^8.1.4
+  equatable: ^2.0.5
+  flutter_bloc: ^8.1.6
+
+  #for routing system:
+  go_router: ^14.2.3
+
+  dio: ^5.4.1
+
+  #for locale storage
+  flutter_secure_storage: ^9.0.0
+
+  cupertino_icons: ^1.0.6
+  l: ^4.0.2
+  flutter_screenutil: ^5.9.0
+  flutter_svg: ^2.0.10+1
+  flutter_launcher_icons: ^0.13.1
+
+  #for internet connectivity
+  connectivity_plus: ^6.0.3
+  internet_connection_checker: ^1.0.0+1
+
+  #for bottom navigation bar:
+  curved_navigation_bar: ^1.0.6
+
+  #for showing calendar:
+  table_calendar: ^3.1.2
+
+  google_fonts: ^6.2.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner: ^2.4.8
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/icons/
+#    - assets/fonts/
+    - assets/images/
+
+#  fonts:
+#    - family: Poppins
+#      fonts:
+#        - asset: assets/fonts/Poppins-Black.ttf
+#        - asset: assets/fonts/Poppins-Bold.ttf
+#        - asset: assets/fonts/Poppins-ExtraBold.ttf
+#        - asset: assets/fonts/Poppins-SemiBold.ttf
+#        - asset: assets/fonts/Poppins-Regular.ttf
+#        - asset: assets/fonts/Poppins-Medium.ttf
+
+flutter_intl:
+  enabled: true
+  class_name: AppLocalizations
+  main_locale: ru
+  arb_dir: lib\src\common\l10n
+  template-arb-file: intl_ru.arb
+  output-localization-file: app_localizations.dart
+  use_deferred_loading: false
