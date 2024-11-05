@@ -22,6 +22,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "april": MessageLookupByLibrary.simpleMessage("Aprel"),
+        "august": MessageLookupByLibrary.simpleMessage("Avgust"),
         "black": MessageLookupByLibrary.simpleMessage("Qora"),
         "categories": MessageLookupByLibrary.simpleMessage("Kategoriya"),
         "choose": MessageLookupByLibrary.simpleMessage("Tanlash"),
@@ -30,19 +32,33 @@ class MessageLookup extends MessageLookupByLibrary {
         "create": MessageLookupByLibrary.simpleMessage("Yaratish"),
         "create_new_tasks":
             MessageLookupByLibrary.simpleMessage("Yangi topshiriq yaratish"),
+        "dark": MessageLookupByLibrary.simpleMessage("Qora rang"),
         "date": MessageLookupByLibrary.simpleMessage("Sana"),
+        "december": MessageLookupByLibrary.simpleMessage("Dekabr"),
         "desc": MessageLookupByLibrary.simpleMessage("Qo\'shimcha ma\'lumot"),
         "design": MessageLookupByLibrary.simpleMessage("Dezayn"),
+        "february": MessageLookupByLibrary.simpleMessage("Fevral"),
+        "january": MessageLookupByLibrary.simpleMessage("Yanvar"),
+        "july": MessageLookupByLibrary.simpleMessage("Iyul"),
+        "june": MessageLookupByLibrary.simpleMessage("Iyun"),
+        "light": MessageLookupByLibrary.simpleMessage("Oq rang"),
         "lost_internet_connection": MessageLookupByLibrary.simpleMessage(
             "Internet yo’q. Internet bilan ulanishni tekshiring"),
+        "march": MessageLookupByLibrary.simpleMessage("Mart"),
+        "may": MessageLookupByLibrary.simpleMessage("May"),
         "new_tasks": MessageLookupByLibrary.simpleMessage("Topshiriq nomi"),
+        "november": MessageLookupByLibrary.simpleMessage("Noyabr"),
+        "october": MessageLookupByLibrary.simpleMessage("Oktabr"),
         "profile_language": MessageLookupByLibrary.simpleMessage("Til"),
         "profile_theme": MessageLookupByLibrary.simpleMessage("Fon"),
         "profile_title": MessageLookupByLibrary.simpleMessage("Profil"),
+        "russian": MessageLookupByLibrary.simpleMessage("Rus tili"),
         "sentabr": MessageLookupByLibrary.simpleMessage("Sentabr 17"),
+        "september": MessageLookupByLibrary.simpleMessage("Sentabr"),
         "settings": MessageLookupByLibrary.simpleMessage("Sozlanmalar"),
         "start_time": MessageLookupByLibrary.simpleMessage("Boshlanadi"),
         "today": MessageLookupByLibrary.simpleMessage("Bugun"),
+        "uzbek": MessageLookupByLibrary.simpleMessage("O\'zbek tili"),
         "white": MessageLookupByLibrary.simpleMessage("Oq")
       };
 }

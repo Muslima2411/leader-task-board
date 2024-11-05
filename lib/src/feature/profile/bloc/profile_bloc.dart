@@ -14,7 +14,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
             pageState: ProfilePageState.userNotRegistered,
             profileData: {})) {
     on<SetLightMode>(_onSetLightMode);
-    on<GetProfileDataEvent>(_onGetProfileData);
+    // on<GetProfileDataEvent>(_onGetProfileData);
     _loadInitialTheme();
   }
 
@@ -43,34 +43,34 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
         pageState: ProfilePageState.lightModeSet));
   }
 
-  Future<void> _onGetProfileData(
-    GetProfileDataEvent event,
-    Emitter<ProfileState> emit,
-  ) async {
-    log("profile bloc");
-
-    var token = await AppStorage.$read(key: StorageKey.accessToken);
-
-    if (token == null) {
-      emit(const ProfileState(
-          pageState: ProfilePageState.userNotRegistered, profileData: {}));
-    }
-
-    emit(const ProfileState(
-        pageState: ProfilePageState.loading, profileData: {}));
-
-    var result = await ProfileRepository.getCurrentProfileData();
-
-    if (result != null) {
-      log("profileData is not null");
-      emit(ProfileState(
-          profileData: result, pageState: ProfilePageState.userRegistered));
-    } else {
-      log("profile bloc get data error");
-      emit(const ProfileState(
-          profileData: {}, pageState: ProfilePageState.userNotRegistered));
-    }
-  }
+  // Future<void> _onGetProfileData(
+  //   GetProfileDataEvent event,
+  //   Emitter<ProfileState> emit,
+  // ) async {
+  //   log("profile bloc");
+  //
+  //   var token = await AppStorage.$read(key: StorageKey.accessToken);
+  //
+  //   if (token == null) {
+  //     emit(const ProfileState(
+  //         pageState: ProfilePageState.userNotRegistered, profileData: {}));
+  //   }
+  //
+  //   emit(const ProfileState(
+  //       pageState: ProfilePageState.loading, profileData: {}));
+  //
+  //   var result = await ProfileRepository.getCurrentProfileData();
+  //
+  //   if (result != null) {
+  //     log("profileData is not null");
+  //     emit(ProfileState(
+  //         profileData: result, pageState: ProfilePageState.userRegistered));
+  //   } else {
+  //     log("profile bloc get data error");
+  //     emit(const ProfileState(
+  //         profileData: {}, pageState: ProfilePageState.userNotRegistered));
+  //   }
+  // }
 
   void _onLogOut() {}
 }

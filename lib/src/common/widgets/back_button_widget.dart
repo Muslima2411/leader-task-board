@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
@@ -14,13 +14,13 @@ class BackButtonWidget extends StatelessWidget {
     return Row(
       children: [
         ArenaIconButton(
-          icon: Icons.arrow_back_outlined,
+          icon: CupertinoIcons.chevron_back,
           onPressed: () {
             try {
-              context.pop(context);
+              Navigator.pop(context);
             } catch (e) {
-              BlocProvider.of<BottomNavCubit>(context).changeSelectedIndex(0);
-              context.push(AppRouteName.homePage);
+              // BlocProvider.of<BottomNavCubit>(context).changeSelectedIndex(0);
+              // context.push(AppRouteName.homePage);
             }
           },
         ),

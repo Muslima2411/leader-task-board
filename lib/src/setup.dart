@@ -13,7 +13,6 @@ Future<void> setup() async {
   ]);
   await getStorageValues();
   runApp(MyApp());
-  // initializeDateFormatting("ru_RU", null).then((_) => runApp(MyApp()));
 }
 
 String? token;

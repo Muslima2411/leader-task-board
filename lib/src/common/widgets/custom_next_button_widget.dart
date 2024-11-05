@@ -26,6 +26,7 @@ class CustomNextButtonWidget extends StatelessWidget {
         style: Theme.of(context).textTheme.titleMedium?.copyWith(
               color: AppColors.white,
               fontSize: 20.sp,
+              fontWeight: FontWeight.w500,
             ),
       ),
     );

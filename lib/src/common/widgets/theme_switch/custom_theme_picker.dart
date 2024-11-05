@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:task_management_app/src/common/utils/extensions/context_extensions.dart';
 
 import '../../styles/app_colors.dart';
 
@@ -57,7 +58,7 @@ class CustomThemePicker extends StatelessWidget {
             width: 22.h,
             decoration: BoxDecoration(
               border: Border.all(
-                color: AppColors.black,
+                color: context.colorScheme.onPrimary,
                 width: 0.8,
               ),
               shape: BoxShape.circle,

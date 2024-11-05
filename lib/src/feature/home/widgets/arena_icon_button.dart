@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_management_app/src/common/utils/extensions/context_extensions.dart';
 
 import '../../../common/styles/app_colors.dart';
 
@@ -19,12 +20,11 @@ class ArenaIconButton extends StatelessWidget {
       style: TextButton.styleFrom(
         minimumSize: const Size(40, 40),
         shape: const CircleBorder(),
-        backgroundColor: AppColors.white,
-        overlayColor: AppColors.green,
+        backgroundColor: context.colorScheme.background,
       ),
       child: Icon(
         icon,
-        color: AppColors.green,
+        color: context.colorScheme.onPrimary,
       ),
     );
   }

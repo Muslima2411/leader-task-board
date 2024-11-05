@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:task_management_app/src/common/utils/extensions/context_extensions.dart';
 import 'package:task_management_app/src/common/widgets/center_stick_widget.dart';
 import '../../../../generated/assets.dart';
 import '../../../feature/init/bloc/splash_bloc.dart';
@@ -30,7 +31,7 @@ class CustomLanguagePickerWidget extends StatelessWidget {
                         .read<SplashPageBloc>()
                         .add(const ChangeCurrentLanguage("uz"));
                   },
-                  language: "Узбекский",
+                  language: context.localized.uzbek,
                   selected:
                       state.currentLanguage == const Locale("uz").toString(),
                   countryFlag: Assets.imagesFlagUzb,
@@ -43,7 +44,7 @@ class CustomLanguagePickerWidget extends StatelessWidget {
                         .read<SplashPageBloc>()
                         .add(const ChangeCurrentLanguage("ru"));
                   },
-                  language: "Русский",
+                  language: context.localized.russian,
                   selected:
                       state.currentLanguage == const Locale("ru").toString(),
                   countryFlag: Assets.imagesFlagRus,
@@ -57,8 +58,7 @@ class CustomLanguagePickerWidget extends StatelessWidget {
         ),
         // const Spacer(),
         CustomNextButtonWidget(
-          // text: context.localized.choose,
-          text: "Выбрать",
+          text: context.localized.choose,
           onPressed: () {
             Navigator.pop(context);
             context.read<LocaleCubit>().changeLocale(

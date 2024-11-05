@@ -5,7 +5,6 @@ import "package:dio/dio.dart";
 import "../api/api_connection.dart";
 
 class ConnectivityInterceptor extends Interceptor {
-
   ConnectivityInterceptor({
     required this.requestReceiver,
   });
@@ -22,5 +21,9 @@ class ConnectivityInterceptor extends Interceptor {
     super.onError(err, handler);
   }
 
-  bool _shouldRetry(DioError err) => err.type == DioErrorType.connectionError && err.error != null && err.error is SocketException && err.error is TimeoutException;
+  bool _shouldRetry(DioError err) =>
+      err.type == DioErrorType.connectionError &&
+      err.error != null &&
+      err.error is SocketException &&
+      err.error is TimeoutException;
 }

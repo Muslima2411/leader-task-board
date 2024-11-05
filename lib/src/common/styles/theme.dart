@@ -2,14 +2,13 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart'
     show AppBarTheme, Brightness, ThemeData, ThemeMode, immutable;
-import 'package:google_fonts/google_fonts.dart';
 import 'package:task_management_app/src/common/styles/text_style.dart';
 
 import 'app_colors.dart';
 import 'color_scheme.dart';
 
 ThemeData lightMode = ThemeData(
-  fontFamily: GoogleFonts.poppins().fontFamily,
+  // fontFamily: GoogleFonts.poppins().fontFamily,
   textTheme: const AppTextStyle(),
   brightness: Brightness.light,
   colorScheme: lightColorScheme,
@@ -21,7 +20,7 @@ ThemeData lightMode = ThemeData(
 );
 
 ThemeData darkMode = ThemeData(
-  fontFamily: GoogleFonts.poppins().fontFamily,
+  // fontFamily: GoogleFonts.poppins().fontFamily,
   textTheme: const AppTextStyle(),
   brightness: Brightness.dark,
   colorScheme: darkColorScheme,

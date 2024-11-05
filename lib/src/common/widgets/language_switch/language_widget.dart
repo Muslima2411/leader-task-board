@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:task_management_app/src/common/utils/extensions/context_extensions.dart';
 
 import '../../../../generated/assets.dart';
 import '../custom_stick_widget.dart';
@@ -32,17 +33,10 @@ class LanguageSelectionBottomSheetWidget extends StatelessWidget {
             ),
             Row(
               children: [
-                // Text(
-                //   context.localized.choose_lang,
-                //   style: context.textTheme.titleMedium?.copyWith(
-                //     color: context.colorScheme.onPrimary,
-                //     fontSize: 20.sp,
-                //   ),
-                // ),
                 Text(
-                  "Выберите язык",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w500,
+                  context.localized.choose_lang,
+                  style: context.textTheme.titleMedium?.copyWith(
+                    color: context.colorScheme.onPrimary,
                     fontSize: 20.sp,
                   ),
                 ),

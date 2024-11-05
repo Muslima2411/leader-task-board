@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import "package:nested/nested.dart";
 import 'package:task_management_app/src/feature/main/main_wrapper.dart';
 import 'package:task_management_app/src/feature/profile/bloc/profile_bloc.dart';
@@ -32,6 +31,7 @@ class MyApp extends StatelessWidget {
             BlocProvider(create: (context) => LocaleCubit()),
             BlocProvider(create: (context) => CalendarViewCubit()),
             BlocProvider(create: (context) => ThemeCubit()),
+            // BlocProvider(create: (context) => ThemeCubit()),
           ],
           child: BlocBuilder<ThemeCubit, ThemeData>(
             builder: (context, theme) {

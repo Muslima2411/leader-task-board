@@ -249,6 +249,166 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Русский`
+  String get russian {
+    return Intl.message(
+      'Русский',
+      name: 'russian',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Узбекский`
+  String get uzbek {
+    return Intl.message(
+      'Узбекский',
+      name: 'uzbek',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Светлый режим`
+  String get light {
+    return Intl.message(
+      'Светлый режим',
+      name: 'light',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Тёмный режим`
+  String get dark {
+    return Intl.message(
+      'Тёмный режим',
+      name: 'dark',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Январь`
+  String get january {
+    return Intl.message(
+      'Январь',
+      name: 'january',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Февраль`
+  String get february {
+    return Intl.message(
+      'Февраль',
+      name: 'february',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Март`
+  String get march {
+    return Intl.message(
+      'Март',
+      name: 'march',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Апрель`
+  String get april {
+    return Intl.message(
+      'Апрель',
+      name: 'april',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Май`
+  String get may {
+    return Intl.message(
+      'Май',
+      name: 'may',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Июнь`
+  String get june {
+    return Intl.message(
+      'Июнь',
+      name: 'june',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Июль`
+  String get july {
+    return Intl.message(
+      'Июль',
+      name: 'july',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Август`
+  String get august {
+    return Intl.message(
+      'Август',
+      name: 'august',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Сентябрь`
+  String get september {
+    return Intl.message(
+      'Сентябрь',
+      name: 'september',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Октябрь`
+  String get october {
+    return Intl.message(
+      'Октябрь',
+      name: 'october',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ноябрь`
+  String get november {
+    return Intl.message(
+      'Ноябрь',
+      name: 'november',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Декабрь`
+  String get december {
+    return Intl.message(
+      'Декабрь',
+      name: 'december',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

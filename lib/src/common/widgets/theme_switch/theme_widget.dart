@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:task_management_app/src/common/utils/extensions/context_extensions.dart';
 import 'package:task_management_app/src/common/widgets/center_stick_widget.dart';
 import '../../../feature/profile/bloc/profile_bloc.dart';
 import '../../../feature/profile/bloc/profile_event.dart';
@@ -28,7 +29,7 @@ class ThemeWidget extends StatelessWidget {
                   onSelect: () {
                     context.read<ProfileBloc>().add(SetLightMode(true));
                   },
-                  mode: "Светлый режим",
+                  mode: context.localized.light,
                   selected: isLightMode!,
                   color: AppColors.white,
                 ),
@@ -37,7 +38,7 @@ class ThemeWidget extends StatelessWidget {
                   onSelect: () {
                     context.read<ProfileBloc>().add(SetLightMode(false));
                   },
-                  mode: "Тёмный режим",
+                  mode: context.localized.dark,
                   selected: !isLightMode,
                   color: AppColors.black,
                 ),
@@ -47,7 +48,7 @@ class ThemeWidget extends StatelessWidget {
               height: 20.h,
             ),
             CustomNextButtonWidget(
-              text: "Выбрать",
+              text: context.localized.choose,
               onPressed: () {
                 final themeCubit = context.read<ThemeCubit>();
                 final isSelectedLightMode =

@@ -32,7 +32,7 @@ class CustomThemeWidget extends StatelessWidget {
             Row(
               children: [
                 Text(
-                  "Выберите тему",
+                  context.localized.choose_mode,
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                         color: Theme.of(context).colorScheme.onPrimary,
                         fontSize: 20.sp,

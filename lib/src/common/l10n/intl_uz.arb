@@ -19,6 +19,22 @@
   "start_time": "Boshlanadi" ,
   "desc": "Qo'shimcha ma'lumot",
   "create": "Yaratish",
-  "design": "Dezayn"
+  "design": "Dezayn",
+  "russian": "Rus tili",
+  "uzbek": "O'zbek tili",
+  "light": "Oq rang",
+  "dark": "Qora rang",
+  "january": "Yanvar",
+  "february": "Fevral",
+  "march": "Mart",
+  "april": "Aprel",
+  "may": "May",
+  "june": "Iyun",
+  "july": "Iyul",
+  "august": "Avgust",
+  "september": "Sentabr",
+  "october": "Oktabr",
+  "november": "Noyabr",
+  "december": "Dekabr"
 
 }

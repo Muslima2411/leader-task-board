@@ -2,6 +2,8 @@
 class Assets {
   Assets._();
 
+  static const String animationsDocumentsAnimation =
+      'assets/animations/documents_animation.json';
   static const String fontsOFL = 'assets/fonts/OFL.txt';
   static const String fontsPoppinsBlack = 'assets/fonts/Poppins-Black.ttf';
   static const String fontsPoppinsBold = 'assets/fonts/Poppins-Bold.ttf';
@@ -13,6 +15,9 @@ class Assets {
       'assets/fonts/Poppins-SemiBold.ttf';
   static const String iconsCalendarMonth = 'assets/icons/calendar-month.svg';
   static const String iconsCalendarWeek = 'assets/icons/calendar-week.svg';
+  static const String iconsList = 'assets/icons/list.svg';
+  static const String iconsPlus = 'assets/icons/plus.svg';
+  static const String iconsProfile = 'assets/icons/profile.svg';
   static const String iconsRoundClose = 'assets/icons/round-close.svg';
   static const String iconsWeeklyCalendar = 'assets/icons/weekly_calendar.svg';
   static const String imagesAvatar = 'assets/images/avatar.png';

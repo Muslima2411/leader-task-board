@@ -22,6 +22,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "april": MessageLookupByLibrary.simpleMessage("Апрель"),
+        "august": MessageLookupByLibrary.simpleMessage("Август"),
         "black": MessageLookupByLibrary.simpleMessage("Черный"),
         "categories": MessageLookupByLibrary.simpleMessage("Категория"),
         "choose": MessageLookupByLibrary.simpleMessage("Выбрать"),
@@ -30,19 +32,33 @@ class MessageLookup extends MessageLookupByLibrary {
         "create": MessageLookupByLibrary.simpleMessage("Создать"),
         "create_new_tasks":
             MessageLookupByLibrary.simpleMessage("Создать новую задачу"),
+        "dark": MessageLookupByLibrary.simpleMessage("Тёмный режим"),
         "date": MessageLookupByLibrary.simpleMessage("Дата"),
+        "december": MessageLookupByLibrary.simpleMessage("Декабрь"),
         "desc": MessageLookupByLibrary.simpleMessage("Описание"),
         "design": MessageLookupByLibrary.simpleMessage("Дизайн"),
+        "february": MessageLookupByLibrary.simpleMessage("Февраль"),
+        "january": MessageLookupByLibrary.simpleMessage("Январь"),
+        "july": MessageLookupByLibrary.simpleMessage("Июль"),
+        "june": MessageLookupByLibrary.simpleMessage("Июнь"),
+        "light": MessageLookupByLibrary.simpleMessage("Светлый режим"),
         "lost_internet_connection": MessageLookupByLibrary.simpleMessage(
             "Нет интернета. Проверьте подключение к интернету"),
+        "march": MessageLookupByLibrary.simpleMessage("Март"),
+        "may": MessageLookupByLibrary.simpleMessage("Май"),
         "new_tasks": MessageLookupByLibrary.simpleMessage("Название задачи"),
+        "november": MessageLookupByLibrary.simpleMessage("Ноябрь"),
+        "october": MessageLookupByLibrary.simpleMessage("Октябрь"),
         "profile_language": MessageLookupByLibrary.simpleMessage("Язык"),
         "profile_theme": MessageLookupByLibrary.simpleMessage("Тема"),
         "profile_title": MessageLookupByLibrary.simpleMessage("Профиль"),
+        "russian": MessageLookupByLibrary.simpleMessage("Русский"),
         "sentabr": MessageLookupByLibrary.simpleMessage("17 сентября"),
+        "september": MessageLookupByLibrary.simpleMessage("Сентябрь"),
         "settings": MessageLookupByLibrary.simpleMessage("Настройки"),
         "start_time": MessageLookupByLibrary.simpleMessage("Начало"),
         "today": MessageLookupByLibrary.simpleMessage("Сегодня"),
+        "uzbek": MessageLookupByLibrary.simpleMessage("Узбекский"),
         "white": MessageLookupByLibrary.simpleMessage("Белый")
       };
 }
